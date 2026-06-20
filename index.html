@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guardian AI | Digital Fraud Protection</title>
+    <meta name="description" content="Your conversational AI guardian against digital fraud. Reassuring, clear, and built for everyday people.">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&family=Inter:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">Guardian<span class="highlight">AI</span></div>
+        <div class="nav-links">
+            <a href="#features">Features</a>
+            <a href="#architecture">Architecture</a>
+            <a href="#demo" class="btn-primary">Try Demo</a>
+        </div>
+    </nav>
+
+    <header class="hero">
+        <div class="hero-content">
+            <div class="badge">Privacy-First Architecture</div>
+            <h1 class="animate-up">Your conversational AI <span class="text-gradient">guardian</span> against digital fraud.</h1>
+            <p class="subtitle animate-up delay-1">Reassuring, clear, and built for everyday people. Designed to protect mobile and web users from evolving scams while giving stakeholders confidence.</p>
+            <div class="cta-group animate-up delay-2">
+                <button class="btn-primary large">Get Protected</button>
+                <button class="btn-secondary large">View Documentation</button>
+            </div>
+        </div>
+        <div class="hero-visual animate-fade-in delay-2">
+            <div class="glow-orb"></div>
+            <img src="assets/hero_shield.png" alt="AI Shield Guardian" class="floating-img">
+            <div class="chat-bubble left glass">
+                <p>⚠️ <strong>Suspicious link detected.</strong> This matches known phishing patterns.</p>
+            </div>
+            <div class="chat-bubble right glass">
+                <p>Thanks! I won't click it.</p>
+            </div>
+        </div>
+    </header>
+
+    <section id="features" class="features">
+        <h2 class="section-title text-center">Built for <span class="text-gradient">Everyday Security</span></h2>
+        <div class="feature-grid">
+            <div class="feature-card glass hover-lift">
+                <div class="icon">📱</div>
+                <h3>Mobile & Web Ready</h3>
+                <p>Seamlessly integrates across all platforms to protect users wherever they communicate.</p>
+            </div>
+            <div class="feature-card glass hover-lift">
+                <div class="icon">🛡️</div>
+                <h3>Evolving Protection</h3>
+                <p>Continuously learning AI adapts to new scam tactics in real-time, staying one step ahead.</p>
+            </div>
+            <div class="feature-card glass hover-lift">
+                <div class="icon">🤝</div>
+                <h3>Reassuring & Clear</h3>
+                <p>Communicates threats simply and calmly, avoiding technical jargon and panic.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="architecture" class="architecture">
+        <div class="arch-content">
+            <h2>Confidence in a <span class="text-gradient">Privacy-First</span> Architecture</h2>
+            <p>Product stakeholders can rest easy. GuardianAI processes interactions locally where possible, and uses zero-retention ephemeral analysis for cloud checks.</p>
+            <ul class="check-list">
+                <li>✔️ End-to-end encryption</li>
+                <li>✔️ Zero PII retention policy</li>
+                <li>✔️ On-device heuristic filtering</li>
+                <li>✔️ SOC2 and GDPR Compliant</li>
+            </ul>
+        </div>
+        <div class="arch-visual">
+            <div class="data-flow-animation">
+                <!-- Abstract visual of secure data flow -->
+                <div class="node user-node">👤</div>
+                <div class="line"></div>
+                <div class="node shield-node glass">🛡️</div>
+                <div class="line secure"></div>
+                <div class="node cloud-node">☁️</div>
+            </div>
+        </div>
+    </section>
+
+    <section id="demo" class="demo-section">
+        <h2 class="section-title text-center">Try the <span class="text-gradient">Demo</span></h2>
+        <div class="demo-container glass">
+            <div class="demo-input-area">
+                <h3>Analyze Content</h3>
+                <form id="analyze-form">
+                    <div class="form-group">
+                        <label for="analyze-type">Type of Check</label>
+                        <select id="analyze-type" name="type" class="glass-input">
+                            <option value="sms">SMS / Message</option>
+                            <option value="app">App Name</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="analyze-content">Content to Analyze</label>
+                        <textarea id="analyze-content" name="content" rows="4" class="glass-input" placeholder="Enter an SMS message or App name to check if it's safe..." required></textarea>
+                    </div>
+                    <button type="submit" class="btn-primary w-full" id="analyze-btn">Analyze Now</button>
+                </form>
+            </div>
+            <div class="demo-result-area">
+                <h3>GuardianAI Result</h3>
+                <div id="demo-result" class="result-box glass">
+                    <p class="placeholder-text">Awaiting input... enter details on the left to see the AI analysis here.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-content">
+            <div class="logo">Guardian<span class="highlight">AI</span></div>
+            <p>Protecting the digital world, one conversation at a time.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
